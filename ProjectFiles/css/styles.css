@@ -1,0 +1,146 @@
+nav {
+      background-color: blue;
+      height: 100px;
+      margin-bottom: 10px;
+}
+
+.navbar-brand{
+  color: white;
+  font-family: Oxygen;
+}
+
+.brand-logo{
+  margin-right: 3px;
+}
+
+.container .jumbotron {
+  box-shadow: 0 0 50px 0 #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
+
+#customer-tile, #transfer-tile{
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+
+#customer-tile:hover, #transfer-tile:hover{
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#customer-tile{
+  background: url('../customer.png') no-repeat;
+  background-position: center;
+}
+
+#transfer-tile{
+  background: url('../transfer.png') no-repeat;
+  background-position: center;
+}
+
+#customer-tile span, #transfer-tile span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+body{
+  background-color: #61122f;
+}
+
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url('BankJumbo.png') no-repeat;
+    height: 675px;
+    vertical-align: center;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    height: 558px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+    height: 432px;
+  }
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+  
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+
+   #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+} 
+
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer div .row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}

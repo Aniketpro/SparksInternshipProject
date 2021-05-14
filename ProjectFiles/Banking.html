@@ -1,9 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>The Banking Website</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bank</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link rel="stylesheet" href="css/styles.css">
+
 </head>
-<body>
-	<h1>THe Banking Website</h1>
+<body style="background-color: #61122f;">
+<header >
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Welcome to your trusted bank!</strong> You can handle you bank transactions from here.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#" style="color: white;"><img class="brand-logo" src="Bank.png" height="40px;" width="40px;">BANKING MADE EASY</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto" style="margin-right:2px;">
+      <li class="nav-item dropdown">
+        <button class="nav-link dropdown-toggle btn btn-info" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+           HOW CAN WE HELP?
+        </button>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="showCustomer.php">SHOW ALL CUSTOMER</a>
+          <a class="dropdown-item" href="CUSTOMER.php">TRANSFER MONEY</a> 
+          <a class="dropdown-item" href="transactionhistory.php">TNASACTION HISTORY</a> 
+        </div>
+      </li>
+    </ul>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px;">
+    <ul style="margin-left: 0;" class="navbar-nav mr-auto" >
+      <li class="nav-item dropdown">
+        <button class="nav-link dropdown-toggle btn btn-info" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+          CONTACT US
+        </button>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="fake.html"><img src="whatsapp.png" height="30px;" width="30px;">WHATSAPP</a>
+          <a class="dropdown-item" href="fake.html"><img src="instagram.png" height="30px;" width="30px;">INSTAGRAM</a>
+          <a class="dropdown-item" href="fake.html"><img src="phone.png" height="30px;" width="30px;">PHONE NO</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+</header>
+
+  
+<div id="main-content" class="container">
+  <div class="jumbotron">
+    <img src="BankJumbo.png" height="600px;" width="1000px;" alt="Picture of Something" class="img-responsive" >
+  </div>
+  <div id="home-tiles" class="row">
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+      <a href="showCustomer.php"><div id="customer-tile"><span>SHOW ALL CUSTOMER</span></div></a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"> 
+      <a href="CUSTOMER.php"><div id="transfer-tile"><span>TRANSFER MONEY</span></div></a>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"> 
+      <a href="transactionhistory.php"><div id="history-tile"><span>TRANSFER HISTORY</span></div></a>
+    </div>
+  </div>
+</div>
+
+<footer class="panel-footer" style="margin-top: 30px; padding-top: 35px; padding-bottom: 30px; background-color: #222; border-top: 0;">
+      <div class="container" style="color: white;">
+        <div class="row">
+          <section id="hours" class="col-sm-4">
+            <span>Hours:</span><br>
+            Mon-Fri: 11:15am - 10:00pm<br>
+            Sat: 11:15am - 2:30pm<br>
+            Sunday Closed
+            <hr class="visible-xs">
+          </section>
+          <section id="address" class="col-sm-4">
+            <span>Address:</span><br>
+            Gokuldham Society, Powder Gulli<br>
+            Goregaon (E), Filmcity road, Mumbai.
+            <hr class="visible-xs">   
+          </section>
+          <section id="testimonials" class="col-sm-4"><p>The most trusted bank of India</p>
+            <p>Amazing service & Great policies!</p>
+          </section>
+        </div>
+        <div class="text-center">&copy; Copyright New site</div>
+      </div>
+    </footer>
+     
+    
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
 </html>
